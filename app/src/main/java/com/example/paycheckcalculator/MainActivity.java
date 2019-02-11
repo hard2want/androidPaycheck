@@ -25,15 +25,15 @@ public class MainActivity extends AppCompatActivity {
         final ImageView i = (ImageView) findViewById(R.id.logo);
 
         // declare local variables
-        Double hours, rate, grossPay = 0.0;
+        double hours, rate = 0.0;
 
         // capture text field inputs
         hours = Double.parseDouble(h.getText().toString());
         rate = Double.parseDouble(r.getText().toString());
-        grossPay = hours * rate;
+        Paycheck grossPay = new Paycheck(hours, rate);
 
         // setup output string formatting
-        String outputFormat = String.format("$%, .2f", grossPay);
+        String outputFormat = String.format("$%, .2f", grossPay.calcGross());
 
         // post output to view
         g.setText(outputFormat);
