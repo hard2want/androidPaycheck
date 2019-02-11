@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Paycheck Calculator</string>
+    <string name="logo">Paycheck Calculator logo</string>
+    <string name="hours">Hours: </string>
+    <string name="rate">Rate: </string>
+    <string name="gross">Gross Pay:</string>
+    <string name="btnGrossCalc">Calc Gross Pay</string>
+    <string name="title">Calculate Gross Payment</string>
+</resources>
